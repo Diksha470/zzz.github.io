@@ -1,0 +1,90 @@
+<html>
+<head>
+<link rel="stylesheet" href="Mystyle.css">
+</head>
+<body>
+	<img src="C:\Users\BHAVESH\Desktop\Website/Meteor.jpg" width="1350" height="600">	
+		
+		<!--<div class="main">
+			<nav>
+				<div class="logo">
+					<img src="C:\Users\BHAVESH\Desktop\Website\Images\FAQ.png" width="100" height="100">
+				<div>
+		</div>-->
+		
+				
+			
+		
+			
+		<div class="information">
+			<div class="overlay"></div>
+			<img src="C:\Users\BHAVESH\Desktop\Website/VFAQ.png" class="Q1">
+			<div id="circle">
+			
+				<!--<img style="position:absolute;Top:10; left:-400px; width:1700px; height:1000px"src="C:\Users\BHAVESH\Desktop\Website\Images\earthcircle.png">-->
+				<!--<img Style="position:absolute; Top:30px; left: 300px; width:300px; height:225px" src="C:\Users\BHAVESH\Desktop\Website\Images\FAQss.png">-->
+			
+				<div class="Question one">
+					<!--<img src="C:\Users\BHAVESH\Desktop\Website\Images\Question.png">-->
+					<div>
+						<h3>1.What is a meteor?</h3>
+						<p1>It is a small piece of rock, etc. in space.<br> When a meteor enters the <br>earth’s atmosphere it makes a bright line in the night sky</p1>
+						<!--<h5>A bright trail or streak of light that appears <br>in the night sky when a meteoroid enters the Earth's atmosphere.<br> The friction with the air causes<br> the rock to glow with heat.<br> Also called shooting star</h5>-->
+					</div>
+				</div>
+				<div class="Question two">
+					<!--<img src="C:\Users\BHAVESH\Desktop\Website\Images\Question.png">-->
+					<div>
+						<h3>2.How did the meteorite over Russia go undetected?</h3>
+						<p2>Easily, most meteors go undetected.Thousands of them impact Earth every day,but only rarely one this big of course.</p2>
+					</div>
+				</div>
+				<div class="Question three">
+					<!--<img src="C:\Users\BHAVESH\Desktop\Website\Images\Question.png">-->
+					<div>
+						<h3>3.What is the difference <br>between a meteor and an asteroid? </h3>
+						<p3>A meteor is a (usually tiny, tiny, thank goodness) asteroid that happens to hit Earth. </p3>
+					</div>
+				</div>
+				<div class="Question four">
+					<!--<img src="C:\Users\BHAVESH\Desktop\Website\Images\Question.png">-->
+					<div>
+						<h3>4. What is a meteor shower?</h3>
+						<p4>A meteor shower is a celestial event in which a number<br> of meteors are observed to radiate,<br> or originate, from one point in the night sky.</p4>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="B">
+		<a href="index.html">Home</a>
+		</div>
+		<div class="controls">
+		<img src="C:\Users\BHAVESH\Desktop\Website/up.png" id="up">
+		<h3>Questions</h3>
+		<img src="C:\Users\BHAVESH\Desktop\Website/down.png" id="down">
+		</div>
+		
+		<script>
+			var circle=document.getElementById("circle");
+			var up=document.getElementById("up");
+			var down=document.getElementById("down");
+			
+			var rotatevalue=circle.style.transform;
+			var rotatesum;
+			
+			up.onclick=function()
+			{
+				rotatesum=rotatevalue + "rotate(-90deg)";
+				circle.style.transform=rotatesum;
+				rotatevalue=rotatesum;
+			}
+			
+			down.onclick=function()
+			{
+				rotatesum=rotatevalue + "rotate(90deg)";
+				circle.style.transform=rotatesum;
+				rotatevalue=rotatesum;
+			}
+		</script>
+</body>
+</html>
